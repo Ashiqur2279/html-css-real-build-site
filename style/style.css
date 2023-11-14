@@ -1,0 +1,257 @@
+/* project ---------------------------------- ready */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: #e6dbdb;
+  color: black;
+  font-family: "Lato", "arial" sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+body {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* style ------------------------------------ start */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/image/pexels-snapwire-6945.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.nav {
+  padding: 10px;
+}
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  border-radius: 50%;
+  transition: border 2s;
+}
+.logo:hover {
+  border: 2px solid white;
+}
+.navItem {
+  list-style: none;
+  float: right;
+}
+
+.navItem li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.navItem li a:link,
+.navItem li a:visited {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 90%;
+  padding: 5px 10px;
+  border: 2px solid transparent;
+  transition: border-bottom 2s;
+}
+
+.navItem li a:hover,
+.navItem li a:active {
+  border-bottom: 2px solid white;
+}
+
+/* ---------------- header box the hero section ---------------- */
+.headerBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  /* width: 1140px; */
+}
+.headerBox h1 {
+  text-align: justify;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 200%;
+  /* letter-spacing: 1px; */
+  /* word-spacing: 3px; */
+  /* text-transform: uppercase; */
+}
+
+/* btn style */
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 15px;
+  font-weight: 300;
+  transition: background-color 2s, color 2s;
+}
+.btnOne:link,
+.btnOne:visited {
+  background-color: #be2edd;
+  color: white;
+}
+.btnOne:hover,
+.btnOne:active {
+  background-color: #30336b;
+  color: #be2edd;
+  /* border: 2px solid #30336b; */
+}
+.btnTwo:link,
+.btnTwo:visited {
+  background-color: white;
+  color: #be2edd;
+}
+.btnTwo:hover,
+.btnTwo:active {
+  background-color: orange;
+  color: #fff;
+}
+
+/* feature ---------- section ----------------- style */
+
+.featureSection{
+  margin-top: 100px;
+}
+.featureText h2{
+  font-size: 180%;
+  font-weight: 400;
+  width: 70%;
+  margin: 0 15% 25px;
+  letter-spacing: 2px;
+  text-align: justify;
+}
+
+.featureTextDescription{
+  width: 90%;
+  margin: 30px 5%;
+  letter-spacing: 1px;
+  text-align: justify;
+  line-height: 145%;
+}
+.featureTextDescription:after{
+  display: block;
+  height: 2px;
+  width: 25%;
+  content: " ";
+  background-color: orangered;
+  margin: 30px auto;
+}
+
+/* ------------------features-------------- */
+
+.features{
+/* float: left; */
+display: inline-flex;
+/* display: flex; */
+}
+
+.box{
+ margin: 0 15px;
+}
+.box h3{
+  font-size: 130%;
+  font-weight: 600;
+  margin: 10px 0;
+  letter-spacing: 0.25px;
+}
+.box p{
+  font-size: 95%;
+  text-align: justify;
+  line-height: 130%;
+}
+.icon{
+  color: orangered;
+  font-size: 150%;
+  margin-bottom: 25px;
+  display: block;
+}
+
+
+/* footer */
+footer{
+  margin-top: 25px;
+  border-top: 2px solid black;
+}
+
+/* -------------------------gallery section----------------- */
+
+.postSection {
+margin: 50px 0;
+}
+
+.postSection h1{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.postSection h1::after{
+display: block;
+content: " ";
+width: 45%;
+background: green;
+height: 2px;
+margin: 10px auto;
+}
+
+.photoGallery{
+  list-style: none;
+  float: left;
+  /* display: inline-block; */
+  width: 100%;
+}
+
+.photoGallery li{
+  display: block;
+  float: left;
+  width: 25%;
+  /* margin: 2.5px; */
+}
+
+.photo{
+  background-color: black;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.photo img{
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.photo img:hover{
+  opacity: 2;
+  transform: scale(1.05);
+}
+
+/* clearfix */
+
+.clearfix {zoom: 1} .clearfix:after{
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* work section */
+
+.workSection{
+  margin-top: 100px;
+}
+.workTitle{
+  /* margin: 50px; */
+  text-align: center;
+  background-color: #fff;
+}
